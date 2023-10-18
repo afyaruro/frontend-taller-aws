@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #c2c2c26e;
+}
+
+h1 {
+    color: #333;
+    font-weight: 300;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilo para el botón de carga de archivos */
+.custom-file-input {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-file-input input[type="file"] {
+    display: none;
+}
+
+button[type="button"] {
+    background-color: #aeb1e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Estilo para mostrar la información del archivo seleccionado */
+#file-details {
+    display: none;
+}
+
+.custom-file-input{
+    display: block;
+    width: 200px;
+}
+
+p{
+    font-size: 12px;
+}
+
+aside{
+    margin-top: 100px;
+}

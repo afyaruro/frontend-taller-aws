@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taller AWS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <aside>
+        <h1 class="title">Taller AWS - Carga y Descargas de Documento</h1>
+    <form>
+        <label for="file-upload" class="custom-file-input">
+            <!-- <span>Cargar archivo</span> -->
+            <img src="./upload.svg" alt="">
+            <input type="file" id="file-upload" name="file">
+        </label>
+        <div id="file-details">
+            <p id="file-name">Nombre del archivo: <span></span></p>
+            <p id="file-size">Tamaño del archivo: <span></span> bytes</p>
+        </div>
+        <button id="submit-button" type="button">Subir</button>
+    </form>
+    <div style="height: 50px;"></div>
+    <button id="update-button" type="button">Actualizar Tabla</button>
+    <table>
+        <tr>
+            <th style="font-weight: 400;">Nombre del Archivo</th>
+            <th style="font-weight: 400;">Boton de Descargas</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+    </aside>
+</body>
+</html>
