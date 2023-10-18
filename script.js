@@ -1,4 +1,18 @@
+
 $(document).ready(function() {
+    $('#file-upload').on('change', function () {
+        var fileDetails = $('#file-details');
+        var fileInput = $(this)[0];
+        var fileName = fileInput.files[0].name;
+        var fileSize = fileInput.files[0].size;
+        if (this.files.length > 0) {
+            $('#file-name span').text(fileName);
+            $('#file-size span').text(fileSize);
+            fileDetails.css('display', 'block');
+        }else{
+            fileDetails.css('display', 'none');
+        }
+    });
 
     // Evento para cargar un archivo
     $('#submit-button').on('click', function () {
@@ -15,6 +29,9 @@ $(document).ready(function() {
                 processData: false,
                 contentType: false,
                 success: function (data) {
+                    // Aquí puedes manejar la respuesta si es necesario
+                    var fileDetails = $('#file-details');
+                    fileDetails.css('display', 'none');
                 }
             });
         } else {
